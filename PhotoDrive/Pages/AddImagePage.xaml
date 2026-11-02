@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="PhotoDrive.Pages.AddImagePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:PhotoDrive.ViewModels"
+    Title="Add Image"
+    x:DataType="vm:AddImagePageViewModel">
+    <ScrollView>
+        <VerticalStackLayout Style="{StaticResource ContentStack}">
+            <Border Style="{StaticResource SurfaceCard}">
+                <VerticalStackLayout Spacing="18">
+                    <VerticalStackLayout Spacing="7">
+                        <Label Text="Title" Style="{StaticResource FieldLabel}" />
+                        <Border Style="{StaticResource InputCard}">
+                            <Entry Text="{Binding Title}" />
+                        </Border>
+                    </VerticalStackLayout>
+
+                    <Border
+                        Style="{StaticResource PhotoCard}"
+                        IsVisible="{Binding IsPreviewReady}"
+                        HeightRequest="320"
+                        HorizontalOptions="Fill">
+                        <Image Source="{Binding PreviewPhoto}" Aspect="AspectFit" />
+                    </Border>
+
+                    <Grid ColumnDefinitions="*,*" ColumnSpacing="12">
+                        <Button
+                            Grid.Column="0"
+                            Text="Take photo"
+                            Command="{Binding CapturePhotoCommand}"
+                            Style="{StaticResource SecondaryButton}" />
+                        <Button
+                            Grid.Column="1"
+                            Text="Save photo"
+                            Command="{Binding AddPhotoCommand}" />
+                    </Grid>
+                </VerticalStackLayout>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

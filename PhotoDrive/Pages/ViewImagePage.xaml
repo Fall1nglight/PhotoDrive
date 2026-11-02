@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="PhotoDrive.Pages.ViewImagePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:PhotoDrive.ViewModels"
+    Title="Details"
+    x:DataType="vm:ViewImagePageViewModel">
+    <ScrollView>
+        <VerticalStackLayout Style="{StaticResource ContentStack}">
+            <Border
+                Style="{StaticResource PhotoCard}"
+                HeightRequest="380"
+                HorizontalOptions="Fill">
+                <Image Source="{Binding ToView.FilePath}" Aspect="AspectFit" />
+            </Border>
+
+            <Border Style="{StaticResource SurfaceCard}">
+                <VerticalStackLayout Spacing="8">
+                    <Label
+                        Text="{Binding ToView.Title, StringFormat='Title: {0}'}"
+                        Style="{StaticResource SectionTitle}" />
+                    <BoxView
+                        HeightRequest="1"
+                        Margin="0,4,0,6"
+                        Color="{AppThemeBinding Light={StaticResource Outline}, Dark={StaticResource OutlineDark}}" />
+                    <Label
+                        Text="{Binding ToView.Latitude, StringFormat='Latitude: {0}'}"
+                        Style="{StaticResource MetadataLabel}" />
+                    <Label
+                        Text="{Binding ToView.Longitude, StringFormat='Longitude: {0}'}"
+                        Style="{StaticResource MetadataLabel}" />
+                    <Label
+                        Text="{Binding ToView.CreatedAt, StringFormat='CreatedAt: {0}'}"
+                        Style="{StaticResource MetadataLabel}" />
+                    <Label
+                        Text="{Binding ToView.UpdatedAt, StringFormat='Updated: {0}'}"
+                        Style="{StaticResource MetadataLabel}">
+                        <Label.Triggers>
+                            <DataTrigger
+                                Binding="{Binding HasBeenEdited}"
+                                TargetType="Label"
+                                Value="False">
+                                <Setter Property="Text" Value="Updated: Never" />
+                            </DataTrigger>
+                        </Label.Triggers>
+                    </Label>
+                </VerticalStackLayout>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

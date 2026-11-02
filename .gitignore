@@ -1,0 +1,72 @@
+# Build output
+[Bb]in/
+[Oo]bj/
+[Aa]rtifacts/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+
+# Visual Studio and IDE settings
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.rsuser
+
+# .NET and NuGet
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+
+# Test results and coverage
+[Tt]est[Rr]esult*/
+coverage/
+coverage.*
+*.coverage
+*.coveragexml
+*.trx
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.cache
+*.bak
+*.swp
+*.pidb
+*.svclog
+
+# .NET MAUI generated files
+*.maui.json
+*.aab
+*.apk
+*.ipa
+*.app
+*.dSYM/
+xcuserdata/
+DerivedData/
+
+# Signing keys, certificates, and local secrets
+*.keystore
+*.jks
+*.pfx
+*.p12
+*.cer
+*.mobileprovision
+*.secrets.json
+appsettings.*.local.json
+secrets.json
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
