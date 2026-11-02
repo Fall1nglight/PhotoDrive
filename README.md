@@ -12,7 +12,7 @@
 
 ## Overview
 
-PhotoDrive is a personal portfolio project for capturing, organizing, and managing photos. It stores image metadata in a local SQLite database, keeps image files in application storage, and follows the MVVM pattern to separate the user interface from application logic.
+PhotoDrive is a university project for capturing, organizing, and managing photos. It stores image metadata in a local SQLite database, keeps image files in application storage, and follows the MVVM pattern to separate the user interface from application logic.
 
 ---
 
