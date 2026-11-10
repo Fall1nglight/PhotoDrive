@@ -45,6 +45,7 @@
                             </DataTrigger>
                         </Label.Triggers>
                     </Label>
+                    <Button Text="Open map" Command="{Binding OpenMapCommand}" />
                 </VerticalStackLayout>
             </Border>
         </VerticalStackLayout>
