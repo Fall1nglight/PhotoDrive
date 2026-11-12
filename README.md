@@ -1,11 +1,12 @@
 <div align="center">
   <h1>PhotoDrive</h1>
-  <p><b>A cross-platform photo gallery application built with .NET MAUI, MVVM, and SQLite.</b></p>
+  <p><b>A cross-platform photo gallery application built with .NET MAUI, MVVM and SQLite.</b></p>
 
-  ![.NET MAUI](https://img.shields.io/badge/.NET%20MAUI-10-512BD4?logo=dotnet&logoColor=white)
-  ![MVVM](https://img.shields.io/badge/Architecture-MVVM-2563EB)
-  ![SQLite](https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white)
-  ![C%23](https://img.shields.io/badge/C%23-239120?logo=csharp&logoColor=white)
+![.NET MAUI](https://img.shields.io/badge/.NET%20MAUI-10-512BD4?logo=dotnet&logoColor=white)
+![MVVM](https://img.shields.io/badge/Architecture-MVVM-2563EB)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white)
+![C%23](https://img.shields.io/badge/C%23-239120?logo=csharp&logoColor=white)
+
 </div>
 
 ---
@@ -57,11 +58,10 @@ PhotoDrive is a personal portfolio project for capturing, organizing, and managi
 
 ## Tech Stack
 
-| Area | Technology |
-|---|---|
-| Application | C#, .NET 10, .NET MAUI |
-| Architecture | MVVM, CommunityToolkit.Mvvm |
-| User interface | XAML, data binding, relay commands |
-| Database | SQLite, sqlite-net-pcl |
-| Device APIs | Camera, geolocation, local file storage |
-
+| Area           | Technology                              |
+| -------------- | --------------------------------------- |
+| Application    | C#, .NET 10, .NET MAUI                  |
+| Architecture   | MVVM, CommunityToolkit.Mvvm             |
+| User interface | XAML, data binding, relay commands      |
+| Database       | SQLite, sqlite-net-pcl                  |
+| Device APIs    | Camera, geolocation, local file storage |
