@@ -1,7 +1,4 @@
-﻿using Microsoft.Maui.Handlers;
-using PhotoDrive.Databases;
-using PhotoDrive.Services;
-using PhotoDrive.ViewModels;
+﻿using PhotoDrive.ViewModels;
 
 namespace PhotoDrive
 {

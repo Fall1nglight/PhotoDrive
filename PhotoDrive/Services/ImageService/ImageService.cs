@@ -1,9 +1,6 @@
 ﻿using PhotoDrive.Common;
 using PhotoDrive.Databases;
 using PhotoDrive.Model;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace PhotoDrive.Services.ImageService
 {

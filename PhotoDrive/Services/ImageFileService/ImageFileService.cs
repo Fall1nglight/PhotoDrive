@@ -1,9 +1,4 @@
-﻿using PhotoDrive.Common;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace PhotoDrive.Services
+﻿namespace PhotoDrive.Services
 {
     public class ImageFileService : IImageFileService
     {

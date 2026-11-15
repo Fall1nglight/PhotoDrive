@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace PhotoDrive.Messages
+﻿namespace PhotoDrive.Messages
 {
     public interface IBaseMessage
     {

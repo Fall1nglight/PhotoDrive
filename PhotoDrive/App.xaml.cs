@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-
-namespace PhotoDrive
+﻿namespace PhotoDrive
 {
     public partial class App : Application
     {

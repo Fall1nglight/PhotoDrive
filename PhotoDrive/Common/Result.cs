@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace PhotoDrive.Common
+﻿namespace PhotoDrive.Common
 {
     public class Result
     {

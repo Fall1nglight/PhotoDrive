@@ -1,8 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using SQLite;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace PhotoDrive.Model
 {

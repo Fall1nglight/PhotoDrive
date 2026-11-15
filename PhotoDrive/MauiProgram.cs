@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.Logging;
-using Microsoft.Maui.Handlers;
 using PhotoDrive.Databases;
 using PhotoDrive.Pages;
 using PhotoDrive.Services;

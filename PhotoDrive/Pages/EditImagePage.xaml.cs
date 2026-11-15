@@ -1,5 +1,3 @@
-using CommunityToolkit.Mvvm.ComponentModel;
-using PhotoDrive.Model;
 using PhotoDrive.ViewModels;
 
 namespace PhotoDrive.Pages;

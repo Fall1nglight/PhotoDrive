@@ -3,9 +3,6 @@ using CommunityToolkit.Mvvm.Input;
 using CommunityToolkit.Mvvm.Messaging;
 using PhotoDrive.Messages;
 using PhotoDrive.Model;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace PhotoDrive.ViewModels
 {
