@@ -9,7 +9,7 @@ using System.ComponentModel;
 
 namespace PhotoDrive.ViewModels
 {
-    [QueryProperty(nameof(ToEdit), "selected-image")]
+    [QueryProperty(nameof(ToEdit), queryId:QueryProperties.SelectImage)]
     public partial class EditImagePageViewModel : ObservableObject, IMessageHandler<StringMessage>
     {
         private readonly IImageService _imageService;

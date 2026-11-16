@@ -57,7 +57,7 @@ namespace PhotoDrive.ViewModels
                     {
                         ShellNavigationQueryParameters param = new()
                         {
-                            { "selected-image", image }
+                            { QueryProperties.SelectImage, image }
                         };
 
                         await Shell.Current.GoToAsync("view-image", param);
@@ -68,7 +68,7 @@ namespace PhotoDrive.ViewModels
                     {
                         ShellNavigationQueryParameters param = new()
                         {
-                            { "selected-image", image }
+                            { QueryProperties.SelectImage, image }
                         };
 
                         await Shell.Current.GoToAsync("edit-image", param);

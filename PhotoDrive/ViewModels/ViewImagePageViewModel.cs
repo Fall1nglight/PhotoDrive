@@ -1,12 +1,13 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using CommunityToolkit.Mvvm.Messaging;
+using PhotoDrive.Common;
 using PhotoDrive.Messages;
 using PhotoDrive.Model;
 
 namespace PhotoDrive.ViewModels
 {
-    [QueryProperty(nameof(ToView), "selected-image")]
+    [QueryProperty(nameof(ToView), queryId:QueryProperties.SelectImage)]
     public partial class ViewImagePageViewModel : ObservableObject, IMessageHandler<StringMessage>
     {
         [ObservableProperty]
