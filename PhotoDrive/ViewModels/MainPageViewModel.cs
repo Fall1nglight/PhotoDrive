@@ -80,12 +80,6 @@ namespace PhotoDrive.ViewModels
                         await HandleDeleteImage(image);
                         break;
                     }
-
-                default:
-                    {
-                        SendMessage(new StringMessage("Error", "Unknown menu choice"));
-                        break;
-                    }
             }
         }
 
