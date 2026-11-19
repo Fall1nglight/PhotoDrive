@@ -60,7 +60,7 @@ namespace PhotoDrive.ViewModels
                             { QueryProperties.SelectImage, image }
                         };
 
-                        await Shell.Current.GoToAsync("view-image", param);
+                        await Shell.Current.GoToAsync(PageNames.ViewImagePage, param);
                         break;
                     }
 
@@ -71,7 +71,7 @@ namespace PhotoDrive.ViewModels
                             { QueryProperties.SelectImage, image }
                         };
 
-                        await Shell.Current.GoToAsync("edit-image", param);
+                        await Shell.Current.GoToAsync(PageNames.EditImagePage, param);
                         break;
                     }
 

@@ -1,4 +1,5 @@
-﻿using PhotoDrive.ViewModels;
+﻿using PhotoDrive.Common;
+using PhotoDrive.ViewModels;
 
 namespace PhotoDrive
 {
@@ -21,7 +22,7 @@ namespace PhotoDrive
 
         private async void NavigateToAddImagePage(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("add-image");
+            await Shell.Current.GoToAsync(PageNames.AddImagePage);
         }
     }
 }

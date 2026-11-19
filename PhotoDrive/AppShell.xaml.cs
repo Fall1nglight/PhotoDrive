@@ -1,4 +1,5 @@
-﻿using PhotoDrive.Pages;
+﻿using PhotoDrive.Common;
+using PhotoDrive.Pages;
 
 namespace PhotoDrive
 {
@@ -7,9 +8,9 @@ namespace PhotoDrive
         public AppShell()
         {
             InitializeComponent();
-            Routing.RegisterRoute("add-image", typeof(AddImagePage));
-            Routing.RegisterRoute("edit-image", typeof(EditImagePage));
-            Routing.RegisterRoute("view-image", typeof(ViewImagePage));
+            Routing.RegisterRoute(PageNames.AddImagePage, typeof(AddImagePage));
+            Routing.RegisterRoute(PageNames.EditImagePage, typeof(EditImagePage));
+            Routing.RegisterRoute(PageNames.ViewImagePage, typeof(ViewImagePage));
         }
     }
 }
