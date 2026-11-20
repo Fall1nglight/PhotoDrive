@@ -1,4 +1,5 @@
-﻿using PhotoDrive.Common;
+﻿using CommunityToolkit.Mvvm.Input;
+using PhotoDrive.Common;
 using PhotoDrive.ViewModels;
 
 namespace PhotoDrive
@@ -18,11 +19,6 @@ namespace PhotoDrive
         {
             await _viewModel.Init();
             await _viewModel.LoadImagesAsync();
-        }
-
-        private async void NavigateToAddImagePage(object sender, EventArgs e)
-        {
-            await Shell.Current.GoToAsync(PageNames.AddImagePage);
         }
     }
 }

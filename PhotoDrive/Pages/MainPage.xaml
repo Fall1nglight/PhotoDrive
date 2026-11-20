@@ -42,7 +42,7 @@
 
         <Button
             Text="+"
-            Clicked="NavigateToAddImagePage"
+            Command="{Binding NavigateToAddImagePageCommand}"
             HorizontalOptions="End"
             VerticalOptions="End"
             WidthRequest="60"

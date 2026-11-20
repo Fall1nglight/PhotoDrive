@@ -46,6 +46,12 @@ namespace PhotoDrive.ViewModels
         }
 
         [RelayCommand]
+        public async Task NavigateToAddImagePageAsync()
+        {
+            await Shell.Current.GoToAsync(PageNames.AddImagePage);
+        }
+
+        [RelayCommand]
         public async Task ShowImageActionsMenu(ImageEntity image)
         {
             string action = await Shell.Current.DisplayActionSheetAsync("Menu", "Cancel", null,
