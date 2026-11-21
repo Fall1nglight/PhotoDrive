@@ -18,10 +18,7 @@ namespace PhotoDrive.Databases
             _initTask = _db.CreateTableAsync<ImageEntity>();
         }
 
-        public Task EnsureInitializedAsync()
-        {
-            return _initTask;
-        }
+        public Task EnsureInitializedAsync() => _initTask;
 
         public async Task<int> CreateAsync(ImageEntity image)
         {
